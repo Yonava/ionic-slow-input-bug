@@ -12,7 +12,11 @@
         </ion-toolbar>
       </ion-header>
       <div style="height: 500px"></div>
-      <ion-input :value="'for some reason, this input is slow to respond'"></ion-input>
+      <div>
+        <ion-input 
+          :value="'for some reason, this input is slow to respond'"
+        ></ion-input>
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -20,3 +24,9 @@
 <script setup lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonInput } from '@ionic/vue';
 </script>
+
+<style scoped>
+ion-input {
+  --background: #44444490;
+}
+</style>
